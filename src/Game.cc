@@ -1,5 +1,5 @@
 #include <Game.hh>
-#include <iostream>
+#include <Word.hh>
 
 Game::Game() : mWindow(1280, 720, GAME_NAME) {
 
@@ -16,12 +16,16 @@ void Game::update() {
 void Game::render() {
     this->mWindow.clear();
 
+    Font font("../../default_resources/mechanical.otf", sf::Text::Regular);
+    Word word(font, "aboba", sf::Color::White, 24, 10, 50);
+    mWindow.draw(word);
+
     this->mWindow.display();
 }
 
 void Game::run() {
-    while (mWindow.isOpen()) {
 
+    while (mWindow.isOpen()) {
         this->update();
 
         this->render();
