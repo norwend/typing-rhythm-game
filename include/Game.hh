@@ -1,7 +1,9 @@
 #pragma once
-#include <SFML/Graphics.hpp>
 #include <memory>
+#include <vector>
+#include <SFML/Graphics.hpp>
 #include <Window.hh>
+#include <Interfaces.hh>
 
 #define GAME_NAME "TRG"
 
