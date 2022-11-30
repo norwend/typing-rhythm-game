@@ -1,4 +1,4 @@
-add_executable(typing_rhythm_game Main.cc AudioHandler.cc WordGetter.cc Game.cc Conductor.cc Window.cc)
+add_executable(typing_rhythm_game Main.cc AudioHandler.cc WordGetter.cc Game.cc Conductor.cc Window.cc Text.cc)
 include_directories(../include)
 #include_directories(/opt/homebrew/include)
 #link_directories(/opt/homebrew/lib/)
